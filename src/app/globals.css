@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f172a;
+  --foreground: #1e293b;
+  --font-cinzel : 'Cinzel', serif;
+  --font-cormorant-garamond : 'Cormorant Garamond', serif;
+  --font-inter : 'Inter', sans-serif;
 }
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --text : #f1f5f9;
+    --primary: #facc15; /* Amarillo cálido */
+    --secondary: #dc2626; /* Rojo oscuro */
+    --input-background: #334155; /* Azul grisáceo más claro */
+    --border: #facc15; /* Glow dorado al enfocar */
+    --gold: #B3853A;
   }
+}
+
+.flex-col-center{
+  @apply flex flex-col items-center justify-center ;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+.font-cormorant-garamond {
+  font-family: var(--font-cormorant-garamond);
+}
+.font-inter {
+  font-family: var(--font-inter);
+}
+.login-input{
+  width: 80%;
+  padding: 1.2rem;
+  border: 1px solid #83311E;
+  border-radius: 10px;
+}
+.login-buton{
+  width: 80%;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  background-color: #83311E;
+  color: #f1f5f9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*Header Component*/
+.button{
+  position:fixed;
+  right: 0;
+  margin: 0px 20px 0px 0px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  
+}
+.burger-menu{
+  width: 5rem;
+  &::after, &::before{
+    content: '';
+    position: block;
+    width: 60%;
+    height: 4px;
+    background-color: #f1f5f9;
+    position:relative;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  &::after{
+    top: 5px;
+  }
+  &::before{
+    top: -5px;  
+}
+}
+.burger-menu-active{
+  &::after{
+    transform: rotate(45deg);
+    top: -2px;
+  }
+  &::before{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+/*
+Fondo principal	#0f172a	Gris azulado muy oscuro
+Fondo contenedor	#1e293b	Gris más claro para cajas
+Texto principal	#f1f5f9	Casi blanco, muy legible
+Detalles/acento 1	#facc15	Amarillo cálido (inspirado en Luffy)
+Detalles/acento 2	#dc2626	Rojo oscuro para botones secundarios
+Input background	#334155	Azul grisáceo más claro
+Borde inputs/focus	#facc15	Glow dorado al enfocar
+:root {
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --primary: #32CD32;
+  --secondary: #F4F4F4;
+  --border: #E4E4E4;
+}
+
+*/
