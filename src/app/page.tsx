@@ -1,8 +1,10 @@
+import { HeroSection } from "./components/heroSection";
 
 export default function Home() {
   return (
     <div className="">
-       soy un home
+       <HeroSection/>
+       
     </div>
   );
 }

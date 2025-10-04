@@ -8,16 +8,16 @@ export const MenuItems : MenuItem[] = [
         href: "/" 
     },
     { 
-        name: "About", 
-        href: "/about"  
+        name: "Sobre mí", 
+        href: "/sobre-mi"  
     },
     { 
-        name: "Projects", 
-        href: "/projects" 
+        name: "Proyectos", 
+        href: "/proyectos" 
     },
     { 
-        name: "Contact", 
-        href: "/contact" 
+        name: "Contacto", 
+        href: "/contacto" 
     }
 ];
 

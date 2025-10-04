@@ -9,15 +9,22 @@ export const HeaderComp = () => {
   const [isActive, setIsActive] = useState(false);
   const MotionLink = motion(Link);
   return (
-    <header className="flex flex-col  items-start  w-full px-4 py-2   md:flex-row md:items-center md:justify-between  bg-black">
-      <Image
-        src="/logo2.webp"
-        alt="Logo"
-        width={50}
-        height={50}
-        className="object-contain m-2 md:ml-10 ml-4"
-      />
-
+    <header className="flex flex-col  items-start  w-full px-4 py-2   md:flex-row md:items-center md:justify-between  sticky  z-999999 top-0 bg-opacity-70 bg-black/96">
+      <MotionLink
+        href={'/'}
+        className=" "
+        whileHover={{ scale: 1.1, color: "#FF5733" }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      >
+        <Image
+          src="/logo2.webp"
+          alt="Logo"
+          width={50}
+          height={50}
+          className="object-contain m-2 md:ml-10 ml-4"
+        />
+      </MotionLink>
 
       <nav className="hidden md:flex md:flex-row   lg:gap-40 md:gap-20 mr-20">
         {MenuItems.map((item: MenuItem, i: number) => (
@@ -36,7 +43,7 @@ export const HeaderComp = () => {
 
       <button
         className={`button burger-menu flex flex-col justify-center items-center   md:hidden
-              ${isActive ? "mobile-mode  burger-menu-active" : ""}`
+              ${isActive ? "burger-menu-active" : ""}`
         }
         onClick={() => { setIsActive(!isActive) }}>
       </button>
