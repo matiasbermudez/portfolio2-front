@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Cinzel , Cormorant_Garamond , Inter } from "next/font/google";
 import { HeaderComp } from "./components/headerComp";
+import { FooterComp } from "./components/footerComp";
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className={`bg-background text-foreground ${cinzel.variable} ${cormorantGaramond.variable} ${inter.variable}`}>
         <HeaderComp/>
         {children}
+        <FooterComp/>
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ export const HeroSection = () => {
 
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[90vh]  text-center px-6 overflox-hidden">
-         <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10">
         <Image
           src="/hero-bg.webp"
           alt="Background"
@@ -14,7 +14,6 @@ export const HeroSection = () => {
           priority
           className="object-cover"
         />
-        {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/94" />
       </div>
       <motion.h1

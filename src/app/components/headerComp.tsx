@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image"
-import { MenuItems, MenuItem } from "../constants/constants"
+import { MenuItems, MenuItemInterface } from "../constants/constants"
 import Link from "next/link"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,7 +9,8 @@ export const HeaderComp = () => {
   const [isActive, setIsActive] = useState(false);
   const MotionLink = motion(Link);
   return (
-    <header className="flex flex-col  items-start  w-full px-4 py-2   md:flex-row md:items-center md:justify-between  sticky  z-999999 top-0 bg-opacity-70 bg-black/96">
+    <header className="flex flex-col  items-start  w-full px-4 py-2 md:flex-row md:items-center md:justify-between  
+                      sticky  z-999999 top-0 bg-opacity-50 bg-black/60">
       <MotionLink
         href={'/'}
         className=" "
@@ -27,7 +28,7 @@ export const HeaderComp = () => {
       </MotionLink>
 
       <nav className="hidden md:flex md:flex-row   lg:gap-40 md:gap-20 mr-20">
-        {MenuItems.map((item: MenuItem, i: number) => (
+        {MenuItems.map((item: MenuItemInterface, i: number) => (
           <MotionLink
             key={i}
             href={item.href}
@@ -63,7 +64,7 @@ export const HeaderComp = () => {
             }}
             className="absolute top-[3rem] left-0 w-full flex flex-col gap-6 bg-black p-6 md:hidden z-50"
           >
-            {MenuItems.map((item: MenuItem, i) => (
+            {MenuItems.map((item: MenuItemInterface, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: -20 }}
