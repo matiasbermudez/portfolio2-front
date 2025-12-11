@@ -15,18 +15,6 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --text : #f1f5f9;
-    --primary: #facc15; /* Amarillo cálido */
-    --secondary: #dc2626; /* Rojo oscuro */
-    --input-background: #334155; /* Azul grisáceo más claro */
-    --border: #facc15; /* Glow dorado al enfocar */
-    --gold: #B3853A;
-  }
-}
 
 .flex-col-center{
   @apply flex flex-col items-center justify-center ;
@@ -101,7 +89,38 @@ body {
     top: 0;
   }
 }
+
+/*Contact page*/
+textarea::-webkit-scrollbar {
+  width: 10px; 
+  
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #090909; 
+  border-radius: 5px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+.input-contact{
+  background-color:#070a11 ;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #f1f5f9;
+}
+.input-contact:focus{
+  outline: none;
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 3px var(--primary);
+}
 /*
+focus:outline-none focus:border-[var(--primary)] transition-all duration-300
 Fondo principal	#0f172a	Gris azulado muy oscuro
 Fondo contenedor	#1e293b	Gris más claro para cajas
 Texto principal	#f1f5f9	Casi blanco, muy legible

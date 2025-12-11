@@ -10,7 +10,7 @@ export const HeaderComp = () => {
   const MotionLink = motion(Link);
   return (
     <header className="flex flex-col  items-start  w-full px-4 py-2 md:flex-row md:items-center md:justify-between  
-                      sticky  z-999999 top-0 bg-opacity-50 bg-black/60">
+                      sticky  z-999999 top-0 bg-opacity-50 bg-black/90">
       <MotionLink
         href={'/'}
         className=" "
