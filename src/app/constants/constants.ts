@@ -120,7 +120,7 @@ export const Projects: ProjectsInterface[] = [
     },
     {
         title: "Proyecto 3",
-        descriptionBrief: "Descripción del proyecto 3",
+        descriptionBrief: "Descripción del proyecto 3 ",
         descriptionComplete:"Descripción completa del proyecto 3, con todas sus funcionalidades y tecnologías utilizadas.",
          imageMain: "/projects/project3.webp",
         imageSecundary: [{ src: "/projects/project3Sec1.webp", alt: "descripcion proyecto 3 img sec 1" },

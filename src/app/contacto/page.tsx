@@ -46,6 +46,7 @@ export default function Contacto() {
         />
         <div className="absolute inset-0 bg-black/94" />
       </div>
+
       <motion.div
         className="flex flex-col items-center justify-center w-full h-full"
         initial={{ opacity: 0, y: 50 }}
@@ -56,8 +57,8 @@ export default function Contacto() {
 
         <form action=""
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col  md:py-10 sm:p-10 p-5 gap-5 justify-between md:text-2xl text-lg z-10 bg-[var(--terciary)]/90 
-        shadow-[0_0_30px_rgba(0,0,0,0.8)] backdrop-blur-sm w-[100%] xl:w-[60%] sm:w-[80%] md:h-[70dvh] rounded-xl"
+          className="flex flex-col  md:py-10 sm:p-10 p-5 gap-5 justify-between md:text-xl text-lg z-10 bg-[var(--terciary)]/90 
+        shadow-[0_0_30px_rgba(0,0,0,0.8)] backdrop-blur-sm w-[90%] xl:w-[50%] sm:w-[70%] md:h-[70dvh] rounded-xl"
         >
 
           <label htmlFor="nombre" className=" flex flex-col gap-2 text-start">

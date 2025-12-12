@@ -10,8 +10,8 @@ export default function Home() {
        <ToolsSection/>
        <section>
         <h2>Proyectos</h2>
-        {/* Aquí puedes mapear y mostrar los proyectos usando el componente proyectosComp */}
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 p-6">
+        {/* Mapeo Proyectos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center p-5">
         {
           Projects.map((project: ProjectsInterface, i: number) => (
             <ProjectsComp key={i} project={project} />
