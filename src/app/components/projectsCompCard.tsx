@@ -3,15 +3,8 @@ import { ProjectsInterface } from '../constants/constants';
 interface ProjectsCompProps {
   project: ProjectsInterface;
 }
-/* export interface ProyectsInterface {
-    title: string;
-    descriptionBrief: string;
-    imageMain: string;
-    imageSecundary: ProyectImage[];
-    alt: string;
-    link: string;
-}*/
-export const ProjectsComp = ({ project }: ProjectsCompProps) => {
+
+export const ProjectsCompCard = ({ project }: ProjectsCompProps) => {
   return (
     <div className="w-full flex flex-col items-center">
       <div

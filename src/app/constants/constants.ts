@@ -20,6 +20,8 @@ export interface ProjectsInterface {
     imageSecundary: ProjectImage[];
     alt: string;
     link: string;
+    tecnologies: string[];
+    important: boolean;
 }
 export const MenuItems: MenuItemInterface[] = [
     {
@@ -106,7 +108,9 @@ export const Projects: ProjectsInterface[] = [
         imageSecundary: [{ src: "/projects/project1Sec1.webp", alt: "descripcion proyecto 1 img sec 1" },
         { src: "/projects/project1Sec2.webp", alt: "descripcion proyecto 1 img sec 2" }],
         alt: "Proyecto 1 Image",
-        link: "google.com",
+        link: "https://www.joaquingabotto.com",
+        tecnologies: ["React", "TypeScript", "Tailwind CSS"],
+        important: true
     },
     {
         title: "Proyecto 2",
@@ -116,7 +120,9 @@ export const Projects: ProjectsInterface[] = [
         imageSecundary: [{ src: "/projects/project2Sec1.webp", alt: "descripcion proyecto 3 img sec 1" },
         { src: "/proyects/project2Sec2.webp", alt: "descripcion 3 proyecto img sec 2" }],
         alt: "Proyecto 2 Image",
-        link: "google.com",
+        link: "https://www.joaquingabotto.com",
+        tecnologies: ["React", "TypeScript", "Tailwind CSS"],
+        important: true
     },
     {
         title: "Proyecto 3",
@@ -126,7 +132,45 @@ export const Projects: ProjectsInterface[] = [
         imageSecundary: [{ src: "/projects/project3Sec1.webp", alt: "descripcion proyecto 3 img sec 1" },
         { src: "/projects/project3Sec2.webp", alt: "descripcion proyecto 3 img sec 2" }],
         alt: "Proyecto 3 Image",
-        link: "google.com",
+        link: "https://www.joaquingabotto.com",
+        tecnologies: ["React", "TypeScript", "Tailwind CSS"],
+        important: true
+    },
+     {
+        title: "Proyecto 4",
+        descriptionBrief: "Descripción del proyecto 4 ",
+        descriptionComplete:"Descripción completa del proyecto 4, con todas sus funcionalidades y tecnologías utilizadas.",
+         imageMain: "/projects/project3.webp",
+        imageSecundary: [{ src: "/projects/project3Sec1.webp", alt: "descripcion proyecto 4 img sec 1" },
+        { src: "/projects/project3Sec2.webp", alt: "descripcion proyecto 4 img sec 2" }],
+        alt: "Proyecto 4 Image",
+        link: "https://www.joaquingabotto.com",
+        tecnologies: ["React", "TypeScript", "Tailwind CSS"],
+        important: true
+    },
+     {
+        title: "Proyecto 5",
+        descriptionBrief: "Descripción del proyecto 5 ",
+        descriptionComplete:"Descripción completa del proyecto5, con todas sus funcionalidades y tecnologías utilizadas.",
+         imageMain: "/projects/project3.webp",
+        imageSecundary: [{ src: "/projects/project3Sec1.webp", alt: "descripcion proyecto 5 img sec 1" },
+        { src: "/projects/project3Sec2.webp", alt: "descripcion proyecto 5 img sec 2" }],
+        alt: "Proyecto 5 Image",
+        link: "https://www.joaquingabotto.com",
+        tecnologies: ["React", "TypeScript", "Tailwind CSS"],
+        important: true
+    },
+     {
+        title: "Proyecto 6",
+        descriptionBrief: "Descripción del proyecto 6 ",
+        descriptionComplete:"Descripción completa del proyecto 6, con todas sus funcionalidades y tecnologías utilizadas.",
+         imageMain: "/projects/project3.webp",
+        imageSecundary: [{ src: "/projects/project3Sec1.webp", alt: "descripcion proyecto 6 img sec 1" },
+        { src: "/projects/project3Sec2.webp", alt: "descripcion proyecto 6 img sec 2" }],
+        alt: "Proyecto 3 Image",
+        link: "https://www.joaquingabotto.com",
+        tecnologies: ["React", "TypeScript", "Tailwind CSS"],
+        important: true
     },
 ];
  export const timeline = [
