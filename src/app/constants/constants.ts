@@ -129,3 +129,25 @@ export const Projects: ProjectsInterface[] = [
         link: "google.com",
     },
 ];
+ export const timeline = [
+  {
+    title: "Curiosidad",
+    text: "Siempre me interesó entender cómo están hechas las cosas."
+  },
+  {
+    title: "Frontend",
+    text: "Arranqué por lo visual, pero buscando claridad y orden."
+  },
+  {
+    title: "React / Next.js",
+    text: "Encontré un equilibrio entre UI, lógica y estructura."
+  },
+  {
+    title: "Backend",
+    text: "Empecé a valorar lo que no se ve: datos, auth, arquitectura."
+  },
+  {
+    title: "Hoy",
+    text: "Sigo construyendo proyectos para aprender y mejorar."
+  }
+]
