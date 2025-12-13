@@ -2,33 +2,52 @@ import TimeLineComp from "../components/timeLineComp"
 export default function About() {
 
     return (
-        <div>
-            <h1 className="text-center text-4xl mt-10 ">Cómo llegué hasta acá</h1>
-            <h3 className="text-center text-xl mt-2 "> <span className="text-[#FF5733]">Aprender</span>, construir y  <span className="text-[#FF5733]">mejorar</span>, proyecto a proyecto.</h3>
-            <div className="m-10">
-                <p>Cómo llegué hasta acá</p>
-                <p>Un camino guiado por la curiosidad y el aprendizaje constante.</p>
+        <div className="max-w-6xl mx-auto px-6">
 
-                <p>No fue un camino lineal ni planificado.</p>
-                <p>Fue aprender, probar, equivocarme y volver a intentar.</p>
 
-        
+  <h1 className="text-center text-4xl md:text-5xl font-semibold mt-16">
+    Cómo llegué hasta acá
+  </h1>
 
-            </div>
-            <p className="text-start mt-10">
-                
-            </p>
-            <TimeLineComp />
+  <h3 className="text-center text-xs md:text-sm tracking-widest uppercase mt-4 text-white/70">
+    <span className="text-[#FF5733]">Aprender</span>, construir y{" "}
+    <span className="text-[#FF5733]">mejorar</span>, proyecto a proyecto
+  </h3>
 
-            <section className="m-10">
-                <h3>Como trabajo</h3>
-                <ul className="list-disc ">
-                    <li>Prefiero entender el problema antes de escribir codigo</li>
-                    <li>Me importa mas la claridad que la complejidad</li>
-                    <li>Valoro el feedback y el aprendizaje continuo</li>
-                    <li>No busco soluciones magicas</li>
-                </ul>
-            </section>
-        </div>
+
+  <div className="max-w-xl mx-auto mt-12 text-center space-y-3 text-white/60 text-sm leading-relaxed">
+    <p>
+      Un camino guiado por la curiosidad y el aprendizaje constante.
+    </p>
+    <p>
+      No fue un camino lineal ni planificado.
+    </p>
+    <p>
+      Fue aprender, probar, equivocarme y volver a intentar.
+    </p>
+  </div>
+
+  <div className="h-px bg-white/10 max-w-3xl mx-auto my-16" />
+
+  <TimeLineComp />
+
+
+  <div className="h-px bg-white/10 max-w-3xl mx-auto my-16" />
+
+  <section className="max-w-xl mx-auto mb-20">
+    <h3 className="text-2xl font-semibold mb-6">
+      Cómo trabajo
+    </h3>
+
+    <ul className="space-y-3 text-lg text-white/70 list-disc list-inside">
+      <li>Prefiero entender el problema antes de escribir código</li>
+      <li>Me importa más la claridad que la complejidad</li>
+      <li>Valoro el feedback y el aprendizaje continuo</li>
+      <li>No busco soluciones mágicas</li>
+    </ul>
+  </section>
+
+</div>
+
     )
 }
