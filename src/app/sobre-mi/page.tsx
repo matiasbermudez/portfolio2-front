@@ -1,4 +1,7 @@
+'use client'
+import { motion } from "framer-motion";
 import TimeLineComp from "../components/timeLineComp"
+
 export default function About() {
 
     return (
@@ -45,8 +48,20 @@ export default function About() {
       <li>Valoro el feedback y el aprendizaje continuo</li>
       <li>No busco soluciones mágicas</li>
     </ul>
+    
   </section>
 
+<div className="flex justify-center">
+  <motion.a
+        href="/MatiasBermudezCV.pdf"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="mt-8 px-6 py-3 bg-[#FF5733] rounded-lg text-white font-semibold"
+        download
+      >
+        Descargar CV
+      </motion.a>
+</div>
 </div>
 
     )

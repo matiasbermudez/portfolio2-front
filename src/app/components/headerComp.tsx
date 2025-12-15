@@ -8,6 +8,9 @@ import { motion, AnimatePresence } from "framer-motion";
 export const HeaderComp = () => {
   const [isActive, setIsActive] = useState(false);
   const MotionLink = motion(Link);
+  const madeClick = () => {
+    setIsActive(false);
+  }
   return (
     <header className="flex flex-col  items-start  w-full px-4 py-2 md:flex-row md:items-center md:justify-between  
                       sticky  z-999999 top-0 bg-opacity-50 bg-black/90">
@@ -78,6 +81,7 @@ export const HeaderComp = () => {
                   whileHover={{ scale: 1.1, color: "#FF5733" }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  onClick={madeClick}
                 >
                   {item.name}
                 </MotionLink>

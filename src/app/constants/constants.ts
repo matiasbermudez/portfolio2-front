@@ -32,6 +32,10 @@ export const MenuItems: MenuItemInterface[] = [
         name: "Sobre mí",
         href: "/sobre-mi"
     },
+     {
+        name: "CV",
+        href: "/cv"
+    },
     {
         name: "Proyectos",
         href: "/proyectos"
