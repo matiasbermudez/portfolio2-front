@@ -18,7 +18,7 @@ export default function Contacto() {
     reset();
 
     try {
-      const response = await fetch('http://localhost:4000/api/contact', {
+      const response = await fetch('/api/contacto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
