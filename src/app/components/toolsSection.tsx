@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export const ToolsSection = () => {
     return (
-        <section className="flex flex-wrap md:gap-20 gap-10 md:p-10 p-6  justify-center items-center  h-[120dvh] md:h-[100vh]   bg-[var(--terciary)]">
+        <section className="flex flex-wrap justify-center items-start md:gap-20 gap-10 md:p-10 p-6    h-[100dvh]  min-h-[100dvh] md:min-h-auto  bg-[var(--terciary)]">
             {
                 UserTools.map((tool: UserToolsInterface, i: number) => (
 
@@ -13,7 +13,7 @@ export const ToolsSection = () => {
                         key={i}
                         className="
                                       flex justify-center items-center
-                                      xl:w-[15rem] xl:h-[15rem]
+                                      xl:w-[14rem] xl:h-[14rem]
                                       md:w-[10rem] md:h-[10rem]
                                       sm:w-[7rem] sm:h-[7rem]
                                       w-[5rem] h-[5rem]
