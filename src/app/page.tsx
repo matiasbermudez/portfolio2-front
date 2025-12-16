@@ -12,7 +12,6 @@ export default function Home() {
        <HeroSection/>
        <ToolsSection/>
        <section>
-        <h2>Proyectos</h2>
         {/* Mapeo Proyectos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center p-5">
         {

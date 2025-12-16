@@ -9,27 +9,36 @@ export const ToolsSection = () => {
             {
                 UserTools.map((tool: UserToolsInterface, i: number) => (
 
-                    <motion.div key={i} className="flex justify-center items-center 
-                                                   xl:w-[15rem] xl:h-[15rem] md:w-[10rem] md:h-[10rem] 
-                                                   sm:h-[7rem] sm:w-[7rem] w-[5rem] h-[5rem]"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1.2 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        whileHover={{
-                            scale: 1.1,
-                            rotate: 3,
-                            transition: { type: "spring", stiffness: 300 },
-                        }}
-                    
+                    <motion.div
+                        key={i}
+                        className="
+                                      flex justify-center items-center
+                                      xl:w-[15rem] xl:h-[15rem]
+                                      md:w-[10rem] md:h-[10rem]
+                                      sm:w-[7rem] sm:h-[7rem]
+                                      w-[5rem] h-[5rem]
+                                      overflow-hidden
+                                    "
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                     >
-                        <Image
-                            src={tool.href}
-                            alt={tool.alt}
-                            width={150}
-                            height={150}
-                            priority
-                            className=" object-contain"
-                        />
+                        <motion.div
+                            whileHover={{
+                                scale: 1.05,
+                                rotate: 3,
+                                transition: { type: "spring", stiffness: 300 },
+                            }}
+                            className="flex items-center justify-center w-full h-full"
+                        >
+                            <Image
+                                src={tool.href}
+                                alt={tool.alt}
+                                width={150}
+                                height={150}
+                                className="object-contain max-w-full max-h-full"
+                            />
+                        </motion.div>
                     </motion.div>
                 ))
             }
